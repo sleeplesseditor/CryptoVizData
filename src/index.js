@@ -7,8 +7,8 @@ import { connect, Provider } from 'react-redux';
 import rootReducer from './reducers/reducer';
 import { initData } from './actions/actions';
 
-import CurrentValue from './CurrentValue';
-import TransactionVolumeGraph from './TransactionVolumeGraph';
+import CurrentValue from './components/CurrentValue';
+import TransactionVolumeGraph from './components/TransactionVolumeGraph';
 import Description from './Description';
 
 const store = createStore(
