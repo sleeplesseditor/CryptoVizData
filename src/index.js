@@ -9,7 +9,7 @@ import { initData } from './actions/actions';
 
 import CurrentValue from './components/CurrentValue';
 import TransactionVolumeGraph from './components/TransactionVolumeGraph';
-import Description from './Description';
+import Description from './components/Description';
 
 const store = createStore(
     rootReducer,
