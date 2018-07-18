@@ -1,12 +1,12 @@
-import fetch from 'better-fetch';
+// import fetch from 'better-fetch';
+import axios from 'axios';
 
 const URL = 'https://api-public.sandbox.gdax.com/';
 const SOCKET_URL = 'wss://ws-feed.gdax.com';
 
 export const initData = () => {
     return function (dispatch) {
-        fetch(`${URL}products`)
-            .then(fetch.throwErrors)
+        axios.get(`${URL}products`)
             .then(res => res.json())
             .then(json => {
                 dispatch(setProducts(json));
